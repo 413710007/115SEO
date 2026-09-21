@@ -1,0 +1,21 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;color:#24313a;background:#f7f4ee;line-height:1.9}
+.hero{min-height:48vh;padding:80px 8%;display:flex;align-items:end;color:white;background-size:cover;background-position:center;position:relative}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.68),rgba(0,0,0,.12))}
+.hero-content{position:relative;z-index:1;max-width:900px}
+h1{font-size:clamp(42px,7vw,76px);margin:0 0 8px;letter-spacing:2px}
+.subtitle{font-size:20px;margin:0}
+nav{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(8px);padding:12px 8%;box-shadow:0 2px 12px #00000012}
+nav a{color:#24313a;text-decoration:none;margin-right:24px;font-weight:700}
+main{max-width:1050px;margin:auto;padding:45px 6% 70px}
+section{background:white;border-radius:22px;padding:30px;margin:24px 0;box-shadow:0 8px 25px #0000000d}
+h2{font-size:30px;margin-top:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.gallery img{width:100%;height:280px;object-fit:cover;border-radius:16px}
+iframe{width:100%;border:0;border-radius:16px}
+.video{aspect-ratio:16/9}
+.map{height:360px}
+.highlight{padding:18px 22px;border-left:5px solid #e58b55;background:#fff6ed;border-radius:10px}
+footer{text-align:center;padding:28px;color:#6b747a}
+@media(max-width:700px){.gallery{grid-template-columns:1fr}.gallery img{height:220px}.hero{min-height:55vh;padding:55px 7%}nav a{margin-right:12px;font-size:14px}}
